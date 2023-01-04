@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <IncludeBuildOutput>true</IncludeBuildOutput>
+    <IsPackable>true</IsPackable>
+    <PackageDescription>Power FX Expression Parser</PackageDescription>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>2022.10.29.144</Version>
+    <NoWarn>$(NoWarn);NU5100,NU5104</NoWarn>
+		<Authors>Israel Cazares</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/israelcazares/PowerFxInteractive</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/israelcazares/PowerFxInteractive</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.Interactive" Version="1.0.0-beta.22553.7" />
+    <PackageReference Include="Microsoft.DotNet.Interactive.CSharp" Version="1.0.0-beta.22553.7" />
+    <PackageReference Include="Microsoft.PowerFx.Core" Version="0.2.3-preview" />
+    <PackageReference Include="Microsoft.PowerFx.Interpreter" Version="0.2.3-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(OutputPath)/PowerFxInteractive.dll" Pack="true" PackagePath="interactive-extensions/dotnet" />
+  </ItemGroup>
+
+</Project>
