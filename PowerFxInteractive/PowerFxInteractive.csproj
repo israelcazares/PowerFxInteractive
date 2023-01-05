@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <IncludeBuildOutput>true</IncludeBuildOutput>
     <IsPackable>true</IsPackable>
     <PackageDescription>Power FX Expression Parser</PackageDescription>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>2022.10.29.144</Version>
+		<Version>2023.01.02.2</Version>
     <NoWarn>$(NoWarn);NU5100,NU5104</NoWarn>
 		<Authors>Israel Cazares</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -16,8 +16,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.DotNet.Interactive" Version="1.0.0-beta.22553.7" />
-    <PackageReference Include="Microsoft.DotNet.Interactive.CSharp" Version="1.0.0-beta.22553.7" />
+    <PackageReference Include="Microsoft.DotNet.Interactive" Version="1.0.0-beta.22606.2" />
+    <PackageReference Include="Microsoft.DotNet.Interactive.CSharp" Version="1.0.0-beta.22606.2" />
     <PackageReference Include="Microsoft.PowerFx.Core" Version="0.2.3-preview" />
     <PackageReference Include="Microsoft.PowerFx.Interpreter" Version="0.2.3-preview" />
   </ItemGroup>
