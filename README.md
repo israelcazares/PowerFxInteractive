@@ -12,6 +12,23 @@ Using the `#!powerfx` magic command your code cell will be parsed by a PowerFx e
 
 ```powerfx
 #!powerfx
+Set(a,1)
+```
 
-Set(a,1);
+For complex Expressions like ClearCollect you will need to use a semicolon at the end of the code.
+
+```powerfx
+#!powerfx
+ClearCollect(IceCream, Table(
+    { Flavor: "Chocolate", Quantity: 100 },
+    { Flavor: "Vanilla", Quantity: 200 }
+));
+```
+
+For regular Expressions there's no need to use a semicolon at the end of the sentence.
+
+```powerfx
+#!powerfx
+x = Acos(0.5)
+Sum(x,5)
 ```
